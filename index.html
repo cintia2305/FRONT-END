@@ -1,205 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cardápio - Churrasquinho do Gordinho</title>
-<style>
-    body {
-        background-color: #1a1a1a; /* Fundo Preto/Cinza Escuro */
-        color: white;
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-image: linear-gradient(#1a1a1a, #000);
-    }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        border: 2px solid #333;
-        padding: 20px;
-        background-color: #111;
-        box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    }
-    header {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    h1 {
-        color: #fff;
-        font-size: 2.5em;
-        margin: 0;
-        text-transform: uppercase;
-        text-shadow: 2px 2px #ff4500;
-    }
-    .wifi-badge {
-        background-color: #fff;
-        color: #000;
-        padding: 5px 15px;
-        border-radius: 15px;
-        font-weight: bold;
-        display: inline-block;
-        margin-top: 10px;
-        font-size: 0.9em;
-    }
-    .section-title {
-        background-color: #ff5500; /* Laranja vibrante */
-        color: white;
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.5em;
-        text-transform: uppercase;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        clip-path: polygon(0% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%, 5% 50%); /* Efeito de Faixa */
-    }
-    .price-tag {
-        text-align: center;
-        background-color: #fff;
-        color: #000;
-        font-weight: bold;
-        border-radius: 20px;
-        padding: 5px 15px;
-        display: inline-block;
-        margin-bottom: 15px;
-        font-size: 1.2em;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-    @media (max-width: 600px) {
-        .grid { grid-template-columns: 1fr; }
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    li {
-        margin-bottom: 8px;
-        border-bottom: 1px dashed #444;
-        padding-bottom: 4px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .item-name { font-weight: bold; }
-    .item-price { color: #ffcc00; font-weight: bold;}
-    .obs { font-size: 0.8em; color: #ccc; display: block; margin-top: -5px; }
-    footer {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #aaa;
-        border-top: 1px solid #444;
-        padding-top: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Viva o Dia - Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>Churrasquinho & Açaí<br><span style="color:#ff5500">do Gordinho</span></h1>
-        <div class="wifi-badge">📶 Aqui tem Wi-Fi</div>
-    </header>
+    <div class="formulario">
+        <h1>Viva o Dia ☀️</h1>
+        <p>Comece seu dia com energia positiva</p>
 
-    <div class="grid">
-        <div>
-            <div class="section-title">Espetos</div>
-            <div style="text-align: center;"><span class="price-tag">R$ 13,00 cada</span></div>
-            <ul>
-                <li>Almôndegas com queijo</li>
-                <li>Boi</li>
-                <li>Porco</li>
-                <li>Frango</li>
-                <li>Coração</li>
-                <li>Mussarela trança</li>
-                <li>Medalhão de mussarela</li>
-                <li>Medalhão de frango</li>
-                <li>Medalhão de batata</li>
-                <li>Costelinha</li>
-                <li>Linguiçinha</li>
-                <li>Salsichão</li>
-                <li>Toucinho de barriga</li>
-                <li>Tulipa</li>
-                <li>Romeu e Julieta</li>
-            </ul>
+        <form>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" placeholder="Digite seu usuário" required>
 
-            <div class="section-title">Pães</div>
-            <div style="text-align: center;"><span class="price-tag">R$ 13,00 cada</span></div>
-            <ul>
-                <li>Pão de alho com queijo</li>
-                <li>Pão de frango com requeijão</li>
-                <li>Pão de alho poró com queijo</li>
-                <li>Pão de tomate com queijo</li>
-                <li>Pão quatro queijos</li>
-            </ul>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
 
-            <div class="section-title">Picanha na Brasa</div>
-             <ul>
-                <li>
-                    <span class="item-name">Picanha na brasa (a partir de 300g)</span>
-                    <span class="item-price">A consultar</span>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <div class="section-title">Porções</div>
-            <ul>
-                <li><span class="item-name">Peixe filé de cascudo (500g)</span> <span class="item-price">R$ 40,00</span></li>
-                <li><span class="item-name">Peixe filé de tilápia (500g)</span> <span class="item-price">R$ 50,00</span></li>
-                <li><span class="item-name">Peixe cascudo porção (500g)</span> <span class="item-price">R$ 35,00</span></li>
-                <li><span class="item-name">Filé de tilápia c/ fritas</span> <span class="item-price">R$ 75,00</span></li>
-                <li><span class="item-name">Filé de cascudo c/ fritas</span> <span class="item-price">R$ 65,00</span></li>
-                <li><span class="item-name">Fritas com bacon</span> <span class="item-price">R$ 35,00</span></li>
-                <li><span class="item-name">Fritas c/ bacon e mussarela</span> <span class="item-price">R$ 45,00</span></li>
-                <li><span class="item-name">Fígado acebolado (500g)</span> <span class="item-price">R$ 35,00</span></li>
-                <li><span class="item-name">Contra filé (500g) c/ fritas</span> <span class="item-price">R$ 65,00</span></li>
-                <li><span class="item-name">Pernil (500g) c/ fritas</span> <span class="item-price">R$ 50,00</span></li>
-                <li><span class="item-name">Linguiça calabresa c/ fritas</span> <span class="item-price">R$ 50,00</span></li>
-                <li><span class="item-name">Picanha (500g) com fritas</span> <span class="item-price">R$ 120,00</span></li>
-                <li><span class="item-name">Pastel</span> <span class="item-price">R$ 3,00</span></li>
-                <li><span class="item-name">Salaminho</span> <span class="item-price">R$ 15,00</span></li>
-            </ul>
-
-            <div class="section-title">Sobremesas</div>
-            <ul>
-                <li><span class="item-name">Açaí Cremoso 300ml</span> <span class="item-price">R$ 15,00</span></li>
-                <li><span class="item-name">Açaí Cremoso 500ml</span> <span class="item-price">R$ 20,00</span></li>
-                <li><span class="item-name">Vitamina de Açaí 500ml</span> <span class="item-price">R$ 15,00</span></li>
-            </ul>
-             <div style="text-align:center; font-size:0.9em; margin-bottom:10px; color:#ffcc00">Acréscimos: R$ 3,00 cada</div>
-
-             <div class="section-title">Caldos</div>
-             <ul>
-                 <li><span class="item-name">Mandioca 300ml</span> <span class="item-price">R$ 10,00</span></li>
-                 <li><span class="item-name">Mandioca 500ml</span> <span class="item-price">R$ 15,00</span></li>
-                 <li><span class="item-name">Dobradinha c/ feijão branco</span> <span class="item-price">R$ 15,00</span></li>
-             </ul>
-        </div>
+            <button type="submit">Entrar</button>
+        </form>
     </div>
-    
-    <div class="section-title">Bebidas</div>
-    <div class="grid">
-        <ul>
-            <li><span class="item-name">Refrigerante Lata</span> <span class="item-price">R$ 7,00</span></li>
-            <li><span class="item-name">Suco Natural 500ml</span> <span class="item-price">R$ 12,00</span></li>
-            <li><span class="item-name">Água Mineral</span> <span class="item-price">R$ 3,00</span></li>
-        </ul>
-        <ul>
-            <li><span class="item-name">Caipirinha 500ml</span> <span class="item-price">R$ 15,00</span></li>
-            <li><span class="item-name">Caipivodka Morango</span> <span class="item-price">R$ 20,00</span></li>
-            <li><span class="item-name">Energético 250ml</span> <span class="item-price">R$ 8,00</span></li>
-        </ul>
-    </div>
-
-    <footer>
-        📍 Rua João Ferreira da Silva, nº 703 – Maria Helena<br>
-        <strong>Churrasquinho & Açaí do Gordinho</strong>
-    </footer>
-</div>
 
 </body>
+</html>
