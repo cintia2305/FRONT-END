@@ -10,6 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}           
+
+img2{
+    align-items: center;
 }
 
 /* ===== PRIMEIRA PARTE DENTRO DA CLASSE DO FORMULÁRIO ===== */
