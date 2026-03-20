@@ -6,107 +6,182 @@
     <title>Vestidos Modernos</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-    .card-img-top{
-        width: 100%;
-        height: 300px;
-        object-fit: contain;
-        background-color: aliceblue;
-    }
-</style>
-</head>
+
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            background-color: aliceblue;
+            padding-top: 15px;
+
+        }
+
+        .carousel .card{
+            height: 100%;
+        } 
+        .carousel .card-boddy{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
 <body class="bg-dark">
-<header class="big-whith py-4">
-   <div class="container d-flex justify.content-center">
-    <img src="logo.jpg" alt="logo" style="height:60px">
-   
+
+<header class="bg-white py-4">
+    <div class="container text-center">
+        <img src="logo.jpg" alt="logo" style="height: 200px;">
     </div>
 </header>
-    <div class="container py-5">
 
-        <h1 class="text-center mb-4 text-light">VESTIDOS MODERNOS</h1>
+<div class="container py-5">
+    <h1 class="text-center mb-4 text-light">VESTIDOS MODERNOS</h1>
 
-        <div class="row">
+    <div class="row">
 
-            <!-- Vestido 1 -->
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="Vestido Blue.jpg" class="card-img-top" alt="vestido azul">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Vestido Azul</h5>
-                        <h5 class="alert alert-info py-1">R$500,00</h5>
+        <!-- Cards -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="Vestido Blue.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Vestido Azul</h5>
+                    <div class="alert alert-info py-1">R$500,00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="vestido Yellow.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Vestido Amarelo</h5>
+                    <div class="alert alert-info py-1">R$500,00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="vestido Black.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Vestido Preto</h5>
+                    <div class="alert alert-info py-1">R$500,00</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- CARROSSEL -->
+<div class="container py-5">
+    <h2 class="text-light mb-4">VESTIDOS NOVOS</h2>
+
+    <div id="carouselVestidos" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="row g-3">
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="vestidos novos 1.webp" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h6>Vestido 1</h6>
+                                <p class="text-decoration-line-through">R$500,00</p>
+                                <div class="alert alert-success py-1">R$399,00</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            
 
-            <!-- Vestido 2 -->
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="vestido Yellow.jpg" class="card-img-top" alt="vestido amarelo">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Vestido Amarelo</h5>
-                        <h5 class="alert alert-info py-1">R$500,00</h5>
-
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="vestidos novos 2.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h6>Vestido 2</h6>
+                                <p class="text-decoration-line-through">R$500,00</p>
+                                <div class="alert alert-success py-1">R$399,00</div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="vestidos novos 3.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h6>Vestido 3</h6>
+                                <p class="text-decoration-line-through">R$500,00</p>
+                                <div class="alert alert-success py-1">R$399,00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="vestidos novos 4.jpg" class="card-img-top">
+                            <div class="card-body text-center">
+                                <h6>Vestido 4</h6>
+                                <p class="text-decoration-line-through">R$500,00</p>
+                                <div class="alert alert-success py-1">R$399,00</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row g-3">
 
-                    <!-- Vestido 3 -->
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-3">
                         <div class="card">
-                            <img src="vestido Black.jpg" class="card-img-top" alt="vestido preto">
+                            <img src="vestidos novos 5.jpg" class="card-img-top">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Vestido Preto</h5>
-                                <h5 class="alert alert-info py-1">R$500,00</h5>
-
-                                </div>
+                                <h6>Vestido 5</h6>
+                                <div class="alert alert-success py-1">R$399,00</div>
                             </div>
-                        
-                        </div>
-
-                    <!-- Vestido 4-->
-                    <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="vestido Flowers.jpg" class="card-img-top" alt="vestido flores">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Vestido flores</h5>
-                                <h5 class="alert alert-info py-1">R$800,00</h5>
                         </div>
                     </div>
-                </div>
-                     <!--Vestido 5-->
-                   <div class="col-md-4 mb-3">
-                        <div class="card">
-                            <img src="vestido Green.jpg" class="card-img-top" alt="vestido verde">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Vestido verde</h5>
-                                <h5 class="alert alert-info py-1">R$400,00</h5>
-                                
-                            </div>
-                    </div>
-                </div>  
 
-                   <!--Vestido 6-->
-                <div class="col-md-4 mb-3">
+                    <div class="col-md-3">
                         <div class="card">
-                            <img src="vestido Red.jpg" class="card-img-top" alt="vestido vermelho">
+                            <img src="vestidos novos 6.jpg" class="card-img-top">
                             <div class="card-body text-center">
-                                <h5 class="card-title">Vestido vermelho</h5>
-                                <h5 class="alert alert-info py-1">R$500,00</h5>
-                        
+                                <h6>Vestido 6</h6>
+                                <div class="alert alert-success py-1">R$399,00</div>
                             </div>
+                        </div>
                     </div>
-                </div>  
 
                 </div>
             </div>
+
+        </div>
+
+        <!-- Botões -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVestidos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselVestidos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
 
 <footer class="bg-black text-light text-center py-3">
-    <p class="mb-0">© 2026 Loja Vestidos Modernos | Todos os direitos reservados</p>
+    <p class="mb-0">© 2026 Loja Vestidos Modernos</p>
 </footer>
 
-</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+
+
+</body>
 </html>
